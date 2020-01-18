@@ -1,0 +1,62 @@
+<!-- Weather Dashboard -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Weather Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar py-3 mb-3 title-banner">
+      <h1 class="title">Weather Dashboard</h1>
+    </div>
+    <div class="row ml-3">
+      <div class="col-lg-4">
+        <div class="row">
+          <h2 class="ml-4 col-12">Search for a City:</h2>
+          <div class="ml-4 mb-3 col-12">
+            <input class="enterCity" placeholder="Enter a City"></input>
+            <button class="search">Search</button>
+          </div>
+          <h2 class="ml-4 mt-3 col-12">Previous Searches:</h2>
+          <div class="ml-4 mb-3 col-12">
+            <div class="prev-box" style="width: 220px;">
+               <ul class="list-group list-group-flush prev-list">
+                     <button class='clear mt-1'>Clear Results</button>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-12 mt-3 mb-3">
+            <div class="card current-box">
+              <div class="card-body">
+                <h2 class="card-title current-city"></h2>
+                <img class="icon" src="" alt="Weather icon">
+                <p class="card-text current-temp"></p>
+                <p class="card-text current-hum"></p>
+                <p class="card-text current-wind"></p>
+                <p class="card-text current-uv"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 forecast-banner">
+            <h2 class='col-12'>5-Day Forecast:</h2>
+            <div class="row ml-1 card-group card-text forecast-list"></div>    
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

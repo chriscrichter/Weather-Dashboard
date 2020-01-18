@@ -1,0 +1,93 @@
+/* Weather Dashboard */
+
+.navbar {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.title-banner {
+    background-color: #4d6e9b;
+    color: white;
+    text-align: center;
+}
+
+html, body {
+	font-family: 'Raleway', sans-serif, Helvetica;
+    background-color: #729dbf;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+.forecast-day {
+    background-color: #d6d6d6;
+    color: black;
+    margin-left: 1px;
+    padding-top: 20px;
+}
+
+.search {
+    margin-left: 15px;
+}
+
+.current-box {
+    margin-right: 100px;
+    color: black;
+    background-color: #ecebeb;
+}
+
+.card-body {
+    color: black;
+    background-color: #d6d6d6;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+input {
+    padding-left: 10px;
+}
+
+.forecast-banner {
+    margin-top: 25px;
+}
+
+button {
+    background-color: #9aa5c3;
+    border: 1px solid lightgrey;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+button:active {
+    background-color: darkgrey;
+}
+
+button:hover {
+    border: 1px solid darkgrey;
+}
+
+.list-group-item {
+    background-color: #d6d6d6;
+    border: none;
+    color: black;
+}
+
+.clear {
+    background-color: #9072a2;
+    font-size: 14px;
+    border: 1px solid lightgrey;
+}
+
+.clear:active {
+    background-color: white; 
+}
+
+.list-group-item:active {
+    background-color: black;
+}
