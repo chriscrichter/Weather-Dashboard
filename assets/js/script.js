@@ -58,7 +58,7 @@ $(".search").on("click", function() {
         $(".current-box").show();
         $(".forecast-banner").show();
         var iconcode = response.weather[0].icon;
-        var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+        var iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
         $(".icon").attr('src', iconurl)
         lat = response.coord.lat;
         lon = response.coord.lon;
@@ -90,7 +90,7 @@ $(".search").on("click", function() {
                 var forecastdatedisplay = forecastdate.charAt(5) + forecastdate.charAt(6) + "/" + forecastdate.charAt(8) + forecastdate.charAt(9) +
                 "/" + forecastdate.charAt(0) + forecastdate.charAt(1) + forecastdate.charAt(2) + forecastdate.charAt(3);
                 var forecasticon = forecastTimes[i].weather[0].icon;
-                var forecasticonurl = "http://openweathermap.org/img/w/" + forecasticon + ".png";
+                var forecasticonurl = "https://openweathermap.org/img/w/" + forecasticon + ".png";
                 var forecastTemp = forecastTimes[i].main.temp * (9/5) - 459.67;
                 var forecastHum = forecastTimes[i].main.humidity;
                 if (forecastdisplay === false || forecastdisplay === undefined) {
