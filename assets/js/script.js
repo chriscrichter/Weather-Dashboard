@@ -5,7 +5,7 @@ $(".current-box").hide();
 $(".forecast-banner").hide();
 var forecastdisplay;
 
-// Populates the city buttons with city names in local storage
+// Populates city buttons with city names in local storage
 function allStorage() {
      $(".enterCity").val('');
     var values = [],
@@ -105,5 +105,5 @@ $(".search").on("click", function() {
         }
         forecastdisplay = true;
     });
- 
   });
+  
