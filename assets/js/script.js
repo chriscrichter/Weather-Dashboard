@@ -7,11 +7,11 @@ var forecastdisplay;
 
 // Populates the city buttons with city names in local storage
 function allStorage() {
-	$(".enterCity").val('');
+     $(".enterCity").val('');
     var values = [],
         keys = Object.keys(localStorage),
         i = keys.length;
-    while ( i-- ) {
+    while (i--) {
         values.push(localStorage.getItem(keys[i]));
     }
     for (j = 0; j < values.length; j++) {
@@ -22,7 +22,7 @@ allStorage();
 
 // Gathers weather info and populates the weather boxes for previous cities
 $(document).on("click", ".prev-city", function() {
-	var subject = $(this).text();
+     var subject = $(this).text();
     $(".enterCity").val(subject);
     $(".search").click();
     $(this).remove();
